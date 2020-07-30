@@ -1,0 +1,39 @@
+{
+  "name": "iyngaran/laravel-locations",
+  "description": "The laravel package to provide world countries, regions, state, cities",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Iyngaran Iyathurai",
+      "email": "dev@iyngaran.info"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "iyngaran/api-response": "dev-develop"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^5.0@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Iyngaran\\Location\\": "src/"
+    },
+    "classmap": [
+      "database/factories"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Iyngaran\\Location\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Iyngaran\\Location\\LocationBaseServiceProvider"
+      ]
+    }
+  }
+}
